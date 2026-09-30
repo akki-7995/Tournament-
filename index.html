@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RBGS Tournament</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+}
+
+header {
+    padding: 25px 18px;
+    text-align: center;
+    background: linear-gradient(135deg, #111111, #1c1c1c);
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff3c00;
+}
+
+header p {
+    margin-top: 8px;
+    color: #aaa;
+}
+
+.hero {
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #ff3c00;
+}
+
+.hero p {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    background: #ff3c00;
+}
+
+.btn.secondary {
+    background: #222;
+    border: 1px solid #444;
+}
+
+.section {
+    padding: 30px 18px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.card {
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+}
+
+.card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #999;
+    font-size: 14px;
+}
+
+.rules {
+    background: #111;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.rules p {
+    color: #bbb;
+    margin: 10px 0;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+    background: #111;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RBGS <span>TOURNAMENT</span></div>
+    <p>Royal Babi Gaming Scrims</p>
+</header>
+
+<section class="hero">
+
+    <h1>WELCOME TO <span>RBGS</span></h1>
+
+    <p>
+        Compete. Dominate. Become the Champion.
+    </p>
+
+    <div class="buttons">
+
+        <a href="#" class="btn">
+            📝 Register Team
+        </a>
+
+        <a href="#" class="btn secondary">
+            📊 Leaderboard
+        </a>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>🔥 Tournament Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📝</div>
+            <h3>Team Registration</h3>
+            <p>Register your squad for upcoming RBGS matches.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏆</div>
+            <h3>Leaderboard</h3>
+            <p>Track kills, placement points and team rankings.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎮</div>
+            <h3>Match Information</h3>
+            <p>Get room ID, password and match timings.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📢</div>
+            <h3>Announcements</h3>
+            <p>Stay updated with all tournament announcements.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>📜 Tournament Rules</h2>
+
+    <div class="rules">
+
+        <p>👥 BR Squad — 4 players per team</p>
+        <p>🎯 Kill points: 1 point per kill</p>
+        <p>🏆 Placement points are awarded according to RBGS rules</p>
+        <p>🚫 Hacks and unfair gameplay are strictly prohibited</p>
+        <p>📢 Players must follow tournament announcements</p>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>💬 Join Our Community</h2>
+
+    <div class="buttons">
+
+        <a href="#" class="btn secondary">
+            Discord Server
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 RBGS Tournament • Royal Babi Gaming Scrims
+</footer>
+
+</body>
+</html>
