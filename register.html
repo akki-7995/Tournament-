@@ -1,0 +1,275 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RBGS Team Registration</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    background: #151515;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #292929;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #0d0d0d;
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff3c00;
+}
+
+.player {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+}
+
+.player h3 {
+    margin: 0 0 5px;
+    color: #ff3c00;
+}
+
+button {
+    width: 100%;
+    margin-top: 28px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #ff3c00;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+#message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #182018;
+    border: 1px solid #355535;
+    border-radius: 8px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏆 RBGS Registration</h1>
+
+<p class="subtitle">
+Royal Babi Gaming Scrims
+</p>
+
+<div class="form-box">
+
+<form id="registrationForm">
+
+<label>Team Name</label>
+<input
+    type="text"
+    id="teamName"
+    placeholder="Enter team name"
+    required
+>
+
+<label>IGL Name</label>
+<input
+    type="text"
+    id="iglName"
+    placeholder="Enter IGL name"
+    required
+>
+
+<div class="player">
+
+<h3>👤 Player 1</h3>
+
+<label>Player Name</label>
+<input
+    type="text"
+    id="player1"
+    placeholder="Player 1 name"
+    required
+>
+
+<label>Free Fire UID</label>
+<input
+    type="number"
+    id="uid1"
+    placeholder="Player 1 UID"
+    required
+>
+
+</div>
+
+<div class="player">
+
+<h3>👤 Player 2</h3>
+
+<label>Player Name</label>
+<input
+    type="text"
+    id="player2"
+    placeholder="Player 2 name"
+    required
+>
+
+<label>Free Fire UID</label>
+<input
+    type="number"
+    id="uid2"
+    placeholder="Player 2 UID"
+    required
+>
+
+</div>
+
+<div class="player">
+
+<h3>👤 Player 3</h3>
+
+<label>Player Name</label>
+<input
+    type="text"
+    id="player3"
+    placeholder="Player 3 name"
+    required
+>
+
+<label>Free Fire UID</label>
+<input
+    type="number"
+    id="uid3"
+    placeholder="Player 3 UID"
+    required
+>
+
+</div>
+
+<div class="player">
+
+<h3>👤 Player 4</h3>
+
+<label>Player Name</label>
+<input
+    type="text"
+    id="player4"
+    placeholder="Player 4 name"
+    required
+>
+
+<label>Free Fire UID</label>
+<input
+    type="number"
+    id="uid4"
+    placeholder="Player 4 UID"
+    required
+>
+
+</div>
+
+<label>Discord Username</label>
+<input
+    type="text"
+    id="discord"
+    placeholder="Example: username"
+    required
+>
+
+<button type="submit">
+    🚀 Submit Registration
+</button>
+
+</form>
+
+<div id="message">
+    ✅ Registration form submitted!
+    <br><br>
+    Your team details have been received.
+</div>
+
+</div>
+
+<a class="back" href="index.html">
+    ← Back to RBGS Homepage
+</a>
+
+</div>
+
+<script>
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    document.getElementById("message").style.display = "block";
+
+    this.reset();
+
+});
+</script>
+
+</body>
+</html>
+```
